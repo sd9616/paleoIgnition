@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+<div id="homepage-content" class="container">
+    <h1 id="header" class="header">Welcome to the Paleolightning Data Portal</h1>
+    <p id="acronym" class="acronym">Working Name: ACRONYM</p>
+    <div id="buttons" class="buttons">
+        <a href="{% url 'create_plot' %}" class="btn btn-primary">Create Plot</a>
+        <a href="{% url 'about' %}" class="btn btn-secondary">About</a>
+    </div>
+</div>
+{% endblock %}
